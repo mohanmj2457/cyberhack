@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSearch AI</title>
+    <link rel="stylesheet" href="popup.css">
+    <!-- Use Google Fonts for a modern, sleek look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="shield-icon">🛡️</div>
+            <h1>SafeSearch AI</h1>
+        </div>
+        
+        <div class="status-card">
+            <div class="status-indicator active"></div>
+            <p>Protection is <strong>Active</strong></p>
+        </div>
+
+        <div class="settings-group">
+            <label for="sensitivity">Sensitivity Level</label>
+            <select id="sensitivity">
+                <option value="high">High (Maximum Privacy)</option>
+                <option value="medium" selected>Medium (Balanced)</option>
+                <option value="low">Low (Fewer Alerts)</option>
+            </select>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Alerts Today</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value">0</span>
+                <span class="stat-label">Redacted</span>
+            </div>
+        </div>
+        
+        <button id="viewLogsBtn" class="primary-btn">View Event Logs</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
